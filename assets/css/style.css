@@ -1,0 +1,39 @@
+body {
+  background-image: url("../images/bowie-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #FFFFFF ;
+  font-family: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+	/*background-color: #f1f1f1;*/
+	/*opacity: 0.5;*/
+    padding: 20px;
+    text-align: center;
+}
+
+#dead-buttons {
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.deadContainer {
+    padding: 20px;
+    margin: auto;
+}
+
+#dead-images {
+	float: left;
+}

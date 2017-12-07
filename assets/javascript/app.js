@@ -10,7 +10,7 @@ var limit="&limit=10";
 
 // my array of dead stars //
 
-var topics = ["Jim Morrison", "Jimi Hendrix", "Kurt Cobain", "John Lennon" ]; //David Bowie, Brian Jones, Amy Winehouse, Tupac, Michael Jackson, Karen Carpenter"];
+var topics = ["Jim Morrison", "Jimi Hendrix", "Kurt Cobain", "John Lennon", "David Bowie", "Brian Jones", "Tupac", "Michael Jackson" ];
 console.log(topics);
 // Function for displaying Dead Star data
 
@@ -71,8 +71,8 @@ function onButtonClick() {
 
 		$("#dead-images").empty();
 		for (var i = 0; i < data.data.length; i++) {
-			var image_url= data.data[i].images.original_still.url;
-			var motion_url= data.data[i].images.original.url;
+			var image_url= data.data[i].images.fixed_width_still.url;
+			var motion_url= data.data[i].images.fixed_width.url;
 			console.log(image_url);
 			// <img class="motion" src="..." data-other-src="...">
 			var img= '<img class="motion" src="'+ image_url + '" data-other-src="'+ motion_url + '">';
@@ -107,11 +107,6 @@ function onImageClick() {
 	$(this).attr("src", othersource);
 	$(this).data("otherSrc", liveSource);
 }
-
-
-
-
-
 
 
 
