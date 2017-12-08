@@ -39,7 +39,7 @@ function renderButtons() {
 
 	// this line is for initial page rendering 
 
-window.onload = renderButtons;
+	renderButtons();
 
 
 
@@ -80,7 +80,7 @@ function onButtonClick() {
 
 	// appending image with addtional data
 
-			var div="<div> rating: " + data.data[i].rating + img + "</div>"
+			var div="<div id='dead-images'> rating: " + data.data[i].rating + "<br>" + img + "</div>"
 
 			$("#dead-images").append(div);
 		} 
@@ -92,7 +92,7 @@ function onButtonClick() {
 
 }
 
-// swapping the displayed image for the saved image .. the still for the motion and back again
+	// swapping the displayed image for the saved image .. the still for the motion and back again
 
 function onImageClick() {
 
@@ -107,6 +107,18 @@ function onImageClick() {
 	$(this).attr("src", othersource);
 	$(this).data("otherSrc", liveSource);
 }
+
+	// form input
+
+$("#add-star").on("click", function(event) {
+	event.preventDefault();
+
+	var addTopic = $("#dead-input").val();
+
+	topics.push(addTopic);
+	renderButtons();
+})
+
 
 
 
