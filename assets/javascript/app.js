@@ -59,7 +59,7 @@ function onButtonClick() {
 
 	// call 
 
-	var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=" + q + apiKey + limit);
+	var xhr = $.get("https://api.giphy.com/v1/gifs/search?q=" + q + apiKey + limit);
 
 	// call back
 
