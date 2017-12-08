@@ -20,6 +20,12 @@ body {
     text-align: center;
 }
 
+h1 {
+	font-stretch: ultra-expanded;
+	font-weight: bold;
+	text-shadow: 2px 2px #ffffff;
+}
+
 .deadStar {
     border: none;
     color: black;
@@ -48,6 +54,10 @@ body {
     padding: 10px 10px;
     margin: 5px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#dead-input {
+	border-color: solid black;
 }
 
 #dead-images {
